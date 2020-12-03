@@ -1,6 +1,6 @@
 # Exploring Service APIs through Test Automation
 
-Brief summary of the API course given by the instructor  Amber Race (https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/)
+Brief summary of the API course given by the instructor Amber Race in the [Test Automation University](https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/)
 
 Course Outline
 
