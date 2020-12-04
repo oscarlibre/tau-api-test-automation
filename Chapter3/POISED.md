@@ -3,9 +3,9 @@
 ![](https://testautomationu.applitools.com/course12/lesson3.0-coverimage.png)
 
 #### What we want of our APIs 
-- To be CORRECT in that they are fulfilling their contract correctly
-- APIs that provide good value for the developers creating applications
-- APIs that are intuitive to use
+- To be *CORRECT* in that they are fulfilling their contract correctly
+- APIs that *PROVIDE VALUE* for the developers creating applications
+- APIs that are *INTUITIVE* to use
   
 #### POISED
 - Heuristic for helping with test coverage
