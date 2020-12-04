@@ -8,5 +8,6 @@ In this chapter we will go over how to install Postman, how you can create reque
 
 - ![API for getting time zone information](http://worldtimeapi.org)
 - ![Restful Booker API Playground](https://restful-booker.herokuapp.com/)
+- ![Code Resource](https://github.com/oscarlibre/tau-api-test-automation/blob/main/Chapter2/collections/RestfulBooker.postman_collection.json)
 
 ![Source](https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/chapter2.html)
