@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "fba781ae-691f-4f8f-9a27-597557154f8f",
+		"name": "TAU_Data_Driven",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateBooking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "326f8e89-1cec-4967-bb2b-497e56ace0ae",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var fn = pm.variables.get(\"FirstName\");\r",
+							"var ln =  pm.variables.get(\"LastName\");\r",
+							"\r",
+							"pm.test(\"Check first name\" + fn , function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.booking.firstname).to.eql(fn);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check last name\" + ln, function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.booking.lastname).to.eql(ln);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\" : \"{{FirstName}}\",\n    \"lastname\" : \"{{LastName}}\",\n    \"totalprice\" : 111,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2018-01-01\",\n        \"checkout\" : \"2019-01-01\"\n    },\n    \"additionalneeds\" : \"Breakfast\"\n}"
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking"
+					]
+				},
+				"description": "Creates a new booking in the API"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
