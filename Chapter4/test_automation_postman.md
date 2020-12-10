@@ -42,4 +42,8 @@ pm.test(“Status code is 200”, function () {
 
 ![Code](https://github.com/ambertests/explore-with-postman/tree/master/tau/Lesson4)
 
+##### Newman
+- Tool that will allow you to run Postman test collections on the command line
+- Could be integrated with Jenkins or with other continuous integration solutions
 
+![Source chapter 4.4](https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/chapter4.4.htmll)
