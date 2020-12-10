@@ -30,3 +30,16 @@ pm.test(“Status code is 200”, function () {
 
 ![Source chapter 4.2](https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/chapter4.2.html)
    
+##### Advanced Tests
+
+ - [Postman Scripting docs](https://learning.getpostman.com/docs/postman/scripts/postman_sandbox_api_reference)
+ - Postman basically uses a subset of JavaScript to do their testing.
+ - Pre-request scripts are scripts that run before the requests.
+ - [Moment](https://momentjs.com/) is a JavaScript library which parses, validates, manipulates, and displays dates and times in JavaScript
+ - [Lodash](https://lodash.com/) is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.
+
+![Source chapter 4.3](https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/chapter4.3.html)
+
+![Code](https://github.com/ambertests/explore-with-postman/tree/master/tau/Lesson4)
+
+
